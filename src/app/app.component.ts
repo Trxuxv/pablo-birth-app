@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { PrimeNGConfig } from 'primeng/api';
 
 @Component({
@@ -6,7 +6,7 @@ import { PrimeNGConfig } from 'primeng/api';
     templateUrl: './app.component.html',
     styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnInit{
+export class AppComponent implements OnInit {
 
     topbarTheme = 'dark';
 
@@ -20,9 +20,9 @@ export class AppComponent implements OnInit{
 
     inputStyle = 'outlined';
 
-    ripple: boolean;
+    ripple = true;
 
-    constructor(private primengConfig: PrimeNGConfig) {}
+    constructor(private primengConfig: PrimeNGConfig) { }
 
     ngOnInit() {
         this.primengConfig.ripple = true;
