@@ -1,6 +1,6 @@
 <style>
     .sale-graph {
-        background-image: url('./../../../../assets/images/background/1.jpg');
+        background: linear-gradient(99deg, #832e17 0%, #040403 100%);
         background-size: cover;
     }
 </style>
@@ -39,9 +39,9 @@
                 <div class="p-col-12 p-md-8 p-xl-12">
                     <div class="card traffic">
                         <div class="card-header">
-                            <h6>Traffic</h6>
+                            <h6>Status</h6>
                         </div>
-                        <span>26 May - 27 May</span>
+                        <p>(Rememberting the numbers are fictious, Pablo is 100% in everything he does :0 </p>
                         <div class="traffic-chart">
                             <p-chart #traffic type="doughnut" [data]="trafficChart" [options]="trafficOptions"
                                 [responsive]="true" width="210px" height="210px"></p-chart>
@@ -50,37 +50,38 @@
                             <div class="traffic-tab" [ngClass]="{'traffic-tab-active':activeTraffic===0}"
                                 (click)="changeTrafficset($event); traffic.refresh()" data-label="New Sales"
                                 data-index="0">
-                                <h6>48%</h6>
+                                <h6>78%</h6>
                                 <i class="pi pi-facebook"></i>
-                                <span>Facebook</span>
+                                <span>Hot</span>
                             </div>
-                            <div class="traffic-tab " [ngClass]="{'traffic-tab-active':activeTraffic===1}"
-                                (click)="changeTrafficset($event); traffic.refresh()" data-label="Previous Sales"
+                            <div class="traffic-tab" [ngClass]="{'traffic-tab-active':activeTraffic===1}"
+                                (click)="changeTrafficset($event); traffic.refresh()" data-label="New Sales"
                                 data-index="1">
-                                <h6>26%</h6>
-                                <i class="pi pi-twitter"></i>
-                                <span>Twitter</span>
+                                <h6>48%</h6>
+                                <i class="pi pi-heart"></i>
+                                <span>Loving</span>
                             </div>
-                            <div class="traffic-tab " [ngClass]="{'traffic-tab-active':activeTraffic===2}"
-                                (click)="changeTrafficset($event); traffic.refresh()" data-label="Previous Sales"
+                            <div class="traffic-tab" [ngClass]="{'traffic-tab-active':activeTraffic===2}"
+                                (click)="changeTrafficset($event); traffic.refresh()" data-label="New Sales"
                                 data-index="2">
+                                <h6>48%</h6>
+                                <i class="pi pi-question-circle"></i>
+                                <span>Smart</span>
+                            </div>
+                            <div class="traffic-tab " [ngClass]="{'traffic-tab-active':activeTraffic===3}"
+                                (click)="changeTrafficset($event); traffic.refresh()" data-label="Previous Sales"
+                                data-index="3">
+                                <h6>98%</h6>
+                                <i class="pi pi-comments"></i>
+                                <span>Communicative</span>
+                            </div>
+                            <div class="traffic-tab " [ngClass]="{'traffic-tab-active':activeTraffic===4}"
+                                (click)="changeTrafficset($event); traffic.refresh()" data-label="Previous Sales"
+                                data-index="4">
                                 <h6>17%</h6>
                                 <i class="pi pi-github"></i>
                                 <span>Github</span>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="p-col-12 p-md-6 p-xl-12">
-                    <div class="card goals">
-                        <div class="card-header">
-                            <h6>Today's Goal</h6>
-                            <span><span>183</span> / 255</span>
-                        </div>
-                        <span>22 June, 2020</span>
-                        <div class="goal-graph">
-                            <p-chart #goal type="pie" [data]="goalChart" [options]="goalOptions" [responsive]="true">
-                            </p-chart>
                         </div>
                     </div>
                 </div>
@@ -90,13 +91,13 @@
         <div class="p-col-12 p-md-6 p-xl-4">
             <div class="card leaderboard">
                 <div class="card-header">
-                    <h6>Leaderboard</h6>
+                    <h6>Best Friends or something just like it </h6>
                 </div>
                 <ul>
                     <li>
                         <div class="person">
-                            <img src="assets/layout/images/dashboard/leader-1.png" alt="poseidon-layout" />
-                            <p>Peter Taylor</p>
+                            <img src="assets/layout/images/dashboard/debora.png" alt="poseidon-layout" />
+                            <p>Débora Ferreira</p>
                         </div>
                         <div class="person-numbers">
                             <h6>$224.44</h6>
@@ -105,8 +106,8 @@
                     </li>
                     <li>
                         <div class="person">
-                            <img src="assets/layout/images/dashboard/leader-2.png" alt="poseidon-layout" />
-                            <p>Nicolina Lindholm</p>
+                            <img src="assets/layout/images/dashboard/leader-3.png" alt="poseidon-layout" />
+                            <p>Matheus Lindholm</p>
                         </div>
                         <div class="person-numbers">
                             <h6>$86.05</h6>
@@ -115,8 +116,8 @@
                     </li>
                     <li>
                         <div class="person">
-                            <img src="assets/layout/images/dashboard/leader-3.png" alt="poseidon-layout" />
-                            <p>Su Hua</p>
+                            <img src="assets/images/people/di.png" alt="poseidon-layout" />
+                            <p>Diovana Hua</p>
                         </div>
                         <div class="person-numbers">
                             <h6>$59.44</h6>
@@ -126,7 +127,7 @@
                     <li>
                         <div class="person">
                             <img src="assets/layout/images/dashboard/leader-4.png" alt="poseidon-layout" />
-                            <p>Maria Illescas</p>
+                            <p>Helo Illescas</p>
                         </div>
                         <div class="person-numbers">
                             <h6>$12.32</h6>
@@ -136,7 +137,7 @@
                     <li>
                         <div class="person">
                             <img src="assets/layout/images/dashboard/avatar-dengra.png" alt="poseidon-layout" />
-                            <p>Ezequiel Dengra</p>
+                            <p>Mari Dengra</p>
                         </div>
                         <div class="person-numbers">
                             <h6>$12.32</h6>

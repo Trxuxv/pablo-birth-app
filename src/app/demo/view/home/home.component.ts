@@ -1,9 +1,9 @@
 import { AppBreadcrumbService } from './../../../app.breadcrumb.service';
-import {Component, OnInit} from '@angular/core';
-import {MenuItem} from 'primeng/api';
 import { AppMainComponent } from 'src/app/app.main.component';
-import { Product } from '../../domain/product';
 import { ProductService } from '../../service/productservice';
+import { Component, OnInit } from '@angular/core';
+import { Product } from '../../domain/product';
+import { MenuItem } from 'primeng/api';
 
 @Component({
     templateUrl: './home.component.html',
@@ -44,9 +44,9 @@ export class HomeComponent implements OnInit {
     productsLastWeek: Product[];
 
     constructor(private productService: ProductService,
-                private breadcrumbService: AppBreadcrumbService, private appMain: AppMainComponent) {
+        private breadcrumbService: AppBreadcrumbService, private appMain: AppMainComponent) {
         this.breadcrumbService.setItems([
-            { label: 'Favorites' },
+            { label: 'Main' },
             { label: 'Home', routerLink: ['/home'] }
         ]);
     }
@@ -60,7 +60,7 @@ export class HomeComponent implements OnInit {
             labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September'],
             datasets: [{
                 label: 'Revenue',
-                data:     [31, 83, 69, 29, 62, 25, 59, 26, 46],
+                data: [31, 83, 69, 29, 62, 25, 59, 26, 46],
                 borderColor: [
                     '#00acac',
                 ],
@@ -69,7 +69,7 @@ export class HomeComponent implements OnInit {
                 borderDash: [3, 6],
             }, {
                 label: 'Cost',
-                data:     [67, 98, 27, 88, 38, 3, 22, 60, 56],
+                data: [67, 98, 27, 88, 38, 3, 22, 60, 56],
                 borderColor: [
                     '#f1b263',
                 ],
@@ -99,7 +99,7 @@ export class HomeComponent implements OnInit {
                         fontColor: '#A0A7B5'
                     },
                     gridLines: {
-                        color:  'rgba(160, 167, 181, .3)',
+                        color: 'rgba(160, 167, 181, .3)',
                     }
                 }],
                 xAxes: [{
@@ -107,7 +107,7 @@ export class HomeComponent implements OnInit {
                         fontColor: '#A0A7B5'
                     },
                     gridLines: {
-                        color:  'rgba(160, 167, 181, .3)',
+                        color: 'rgba(160, 167, 181, .3)',
                     }
                 }],
             }
@@ -120,7 +120,7 @@ export class HomeComponent implements OnInit {
                 display: false,
             },
             responsive: true,
-            cutoutPercentage: 70
+            cutoutPercentage: 75
         };
 
         this.appMain['refreshTrafficChart'] = () => {
@@ -134,7 +134,7 @@ export class HomeComponent implements OnInit {
                 'Extra Tasks',
             ],
             datasets: [{
-                data:  [183, 62, 10],
+                data: [200, 62, 10, 90, 90],
                 backgroundColor: [
                     '#ffffff',
                     'rgba(255,255,255,.2)',
@@ -152,14 +152,14 @@ export class HomeComponent implements OnInit {
         };
 
         this.items = [
-            {label: 'View Profile', icon: 'pi pi-user'},
-            {label: 'Update Profile', icon: 'pi pi-refresh'},
-            {label: 'Delete Profile', icon: 'pi pi-trash'},
+            { label: 'View Profile', icon: 'pi pi-user' },
+            { label: 'Update Profile', icon: 'pi pi-refresh' },
+            { label: 'Delete Profile', icon: 'pi pi-trash' },
         ];
 
         this.orderWeek = [
-            {name: 'This Week', code: '0'},
-            {name: 'Last Week', code: '1'}
+            { name: 'This Week', code: '0' },
+            { name: 'Last Week', code: '1' }
         ];
     }
 
@@ -170,7 +170,7 @@ export class HomeComponent implements OnInit {
                 'Total View',
             ],
             datasets: [{
-                data:  [48, 52],
+                data: [98, 100],
                 backgroundColor: [
                     getComputedStyle(document.body).getPropertyValue('--primary-dark-color') || '#2c84d8',
                     getComputedStyle(document.body).getPropertyValue('--content-alt-bg-color') || '#B1B9C9',
@@ -198,11 +198,13 @@ export class HomeComponent implements OnInit {
         this.ordersChart.datasets[0].borderColor = event.currentTarget.getAttribute('data-stroke');
     }
 
-    changeTrafficset(event){
+    changeTrafficset(event) {
         const traffidDataSet = [
-            [48, 52],
-            [26, 74],
-            [12, 88],
+            [30800, 100],
+            [900, 100],
+            [700, 100],
+            [90, 100],
+            [500, 100],
         ];
         this.activeTraffic = parseInt(event.currentTarget.getAttribute('data-index'));
 

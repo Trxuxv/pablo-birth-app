@@ -3693,7 +3693,7 @@ p:last-child {
 }
 .news .news-image {
   width: 100%;
-  background-image: url("../../layout/images/pages/asset-news.png");
+  background-image: url("../../../assets/images/pablo/4.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
