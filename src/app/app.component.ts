@@ -14,7 +14,7 @@ export class AppComponent implements OnInit{
 
     layoutMode = 'dark';
 
-    menuMode = 'static';
+    menuMode = 'horizontal';
 
     isRTL = false;
 
