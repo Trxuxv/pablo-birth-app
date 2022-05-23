@@ -1,3 +1,4 @@
+import { HomeComponent } from './demo/view/home/home.component';
 import {NgModule} from '@angular/core';
 import {FormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
@@ -255,6 +256,7 @@ import {AppBreadcrumbService} from './app.breadcrumb.service';
         PanelsDemoComponent,
         OverlaysDemoComponent,
         MediaDemoComponent,
+        HomeComponent,
         MenusDemoComponent,
         MessagesDemoComponent,
         MessagesDemoComponent,
