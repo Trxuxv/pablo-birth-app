@@ -104,7 +104,6 @@ import { InvalidStateDemoComponent } from './demo/view/invalidstatedemo.componen
 import { InputDemoComponent } from './demo/view/inputdemo.component';
 import { ButtonDemoComponent } from './demo/view/buttondemo.component';
 import { TableDemoComponent } from './demo/view/tabledemo.component';
-import { ListDemoComponent } from './demo/view/listdemo.component';
 import { TreeDemoComponent } from './demo/view/treedemo.component';
 import { PanelsDemoComponent } from './demo/view/panelsdemo.component';
 import { OverlaysDemoComponent } from './demo/view/overlaysdemo.component';
@@ -248,7 +247,6 @@ import { AppBreadcrumbService } from './app.breadcrumb.service';
         InputDemoComponent,
         ButtonDemoComponent,
         TableDemoComponent,
-        ListDemoComponent,
         TreeDemoComponent,
         PanelsDemoComponent,
         OverlaysDemoComponent,

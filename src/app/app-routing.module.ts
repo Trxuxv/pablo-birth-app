@@ -22,7 +22,6 @@ import { InputDemoComponent } from './demo/view/inputdemo.component';
 import { FloatLabelDemoComponent } from './demo/view/floatlabeldemo.component';
 import { ButtonDemoComponent } from './demo/view/buttondemo.component';
 import { TableDemoComponent } from './demo/view/tabledemo.component';
-import { ListDemoComponent } from './demo/view/listdemo.component';
 import { TreeDemoComponent } from './demo/view/treedemo.component';
 import { DisplayComponent } from './utilities/display.component';
 import { ElevationComponent } from './utilities/elevation.component';
@@ -51,7 +50,6 @@ import { AppHelpComponent } from './pages/app.help.component';
                     { path: 'uikit/input', component: InputDemoComponent },
                     { path: 'uikit/button', component: ButtonDemoComponent },
                     { path: 'uikit/table', component: TableDemoComponent },
-                    { path: 'uikit/list', component: ListDemoComponent },
                     { path: 'uikit/tree', component: TreeDemoComponent },
                     { path: 'uikit/panel', component: PanelsDemoComponent },
                     { path: 'uikit/overlay', component: OverlaysDemoComponent },
