@@ -2,53 +2,33 @@
     "data": [
         {
             "id": 1,
-            "name": "James Butt",
-            "country": {
-                "name": "Algeria",
-                "code": "dz"
-            },
+            "name": "Débora L. F. Ferreira",
+            "hate": "Bom, o Pablo pra mim é basicamente sinonimo de paz e amor incodicional",
             "image": "1",
             "company": "Benton, John B Jr",
             "date": "2015-09-13",
             "status": "unqualified",
-            "activity": 17,
-            "representative": {
-                "name": "Ioni Bowcher",
-                "image": "ionibowcher.png"
-            }
+            "activity": 17
         },
         {
             "id": 2,
-            "name": "Josephine Darakjy",
-            "country": {
-                "name": "Egypt",
-                "code": "eg"
-            },
+            "name": "Débora L. F. Ferreira",
+            "hate": "Bom, o Pablo pra mim é basicamente sinonimo de paz e amor incodicional",
             "image": "2",
-            "company": "Chanay, Jeffrey A Esq",
-            "date": "2019-02-09",
-            "status": "proposal",
-            "activity": 0,
-            "representative": {
-                "name": "Amy Elsner",
-                "image": "amyelsner.png"
-            }
+            "company": "Benton, John B Jr",
+            "date": "2015-09-13",
+            "status": "unqualified",
+            "activity": 17
         },
         {
-            "id": 1002,
-            "name": "Art Venere",
-            "country": {
-                "name": "Panama",
-                "code": "pa"
-            },
-            "company": "Chemel, James L Cpa",
-            "date": "2017-05-13",
-            "status": "qualified",
-            "activity": 63,
-            "representative": {
-                "name": "Asiya Javayant",
-                "image": "asiyajavayant.png"
-            }
+            "id": 3,
+            "name": "Débora L. F. Ferreira",
+            "hate": "Bom, o Pablo pra mim é basicamente sinonimo de paz e amor incodicional",
+            "image": "./../../../../assets/images/people/3.png",
+            "company": "Benton, John B Jr",
+            "date": "2015-09-13",
+            "status": "unqualified",
+            "activity": 17
         },
         {
             "id": 1003,
