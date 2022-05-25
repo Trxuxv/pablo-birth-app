@@ -1,17 +1,12 @@
-import {Component, OnInit} from '@angular/core';
-import {NodeService} from '../service/nodeservice';
-import {TreeNode} from 'primeng/api';
-import {AppBreadcrumbService} from '../../app.breadcrumb.service';
+import { Component, OnInit } from '@angular/core';
+import { NodeService } from '../service/nodeservice';
+import { TreeNode } from 'primeng/api';
+import { AppBreadcrumbService } from '../../app.breadcrumb.service';
 
 @Component({
     templateUrl: './treedemo.component.html'
 })
 export class TreeDemoComponent implements OnInit {
-
-
-    files1: TreeNode[];
-
-    files2: TreeNode[];
 
     files3: TreeNode[];
 
@@ -31,8 +26,6 @@ export class TreeDemoComponent implements OnInit {
     }
 
     ngOnInit() {
-        this.nodeService.getFiles().then(files => this.files1 = files);
-        this.nodeService.getFilesystem().then(files => this.files2 = files);
         this.nodeService.getFiles().then(files => {
             this.files3 = [{
                 label: 'Root',

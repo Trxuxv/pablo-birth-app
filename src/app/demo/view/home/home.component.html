@@ -1,0 +1,260 @@
+<style>
+    .sale-graph {
+        background: linear-gradient(99deg, #832e17 0%, #040403 100%);
+        background-size: cover;
+    }
+</style>
+
+<div class="layout-dashboard">
+    <div class="p-grid">
+        <div class="p-col-12 p-md-12 p-xl-6">
+            <div class="p-grid">
+                <div class="p-col-12">
+                    <div class="card sale-graph">
+                        <div class="card-header">
+                            <div class="p-col-12 p-md-12 p-xl-12">
+                                <div class="card news">
+                                    <div class="news-content">
+                                        <h5>What to expect? </h5>
+                                        <span>On this website i will address the subject: Pablo.</span>
+                                        <hr>
+                                        <span>After all, who is Pablo? Well, you'd better be comfortable with your
+                                            computer or cell phone because it's going to be a long trip.</span>
+                                        <div class="news-content-footer">
+                                            <hr>
+                                            <span><span>May 23, 2022 </span>by <span class="category">Débora L. M.
+                                                    Maciel</span></span>
+                                            <span>Curitiba, Brazil</span>
+                                        </div>
+                                    </div>
+                                    <div class="news-image"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="p-col-12 p-md-12 p-xl-6">
+            <div class="p-grid">
+                <div class="p-col-12 p-md-12 p-xl-12">
+                    <div class="card traffic">
+                        <div class="card-header">
+                            <h6>Status</h6>
+                        </div>
+                        <p>(Rememberting the numbers are fictious, Pablo is 100% in everything he does :0 </p>
+                        <div class="traffic-chart">
+                            <p-chart #traffic type="doughnut" [data]="trafficChart" [options]="trafficOptions"
+                                [responsive]="true" width="210px" height="210px"></p-chart>
+                        </div>
+                        <div id="traffic-tabs-container" class="traffic-tabs">
+                            <div class="traffic-tab" [ngClass]="{'traffic-tab-active':activeTraffic===0}"
+                                (click)="changeTrafficset($event); traffic.refresh()" data-label="New Sales"
+                                data-index="0">
+                                <h6>99%</h6>
+                                <i class="pi pi-tag"></i>
+                                <span>Hot</span>
+                            </div>
+                            <div class="traffic-tab" [ngClass]="{'traffic-tab-active':activeTraffic===1}"
+                                (click)="changeTrafficset($event); traffic.refresh()" data-label="New Sales"
+                                data-index="1">
+                                <h6>48%</h6>
+                                <i class="pi pi-heart"></i>
+                                <span>Loving</span>
+                            </div>
+                            <div class="traffic-tab" [ngClass]="{'traffic-tab-active':activeTraffic===2}"
+                                (click)="changeTrafficset($event); traffic.refresh()" data-label="New Sales"
+                                data-index="2">
+                                <h6>48%</h6>
+                                <i class="pi pi-question-circle"></i>
+                                <span>Smart</span>
+                            </div>
+                            <div class="traffic-tab " [ngClass]="{'traffic-tab-active':activeTraffic===3}"
+                                (click)="changeTrafficset($event); traffic.refresh()" data-label="Previous Sales"
+                                data-index="3">
+                                <h6>98%</h6>
+                                <i class="pi pi-comments"></i>
+                                <span>Communicative</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="p-col-12 p-md-12 p-xl-6">
+            <div class="card leaderboard">
+                <div class="card-header">
+                    <h6>Best Friends or something just like it </h6>
+                </div>
+                <ul>
+                    <li>
+                        <div class="person">
+                            <img src="assets/layout/images/dashboard/debora.png" alt="poseidon-layout" />
+                            <p>Débora Ferreira</p>
+                        </div>
+                        <div class="person-numbers">
+                            <button type="button" pButton icon="pi pi-ellipsis-v"
+                                class="p-button-secondary p-button-outlined"
+                                (click)="selectedItem = 1; menu7.toggle($event)"></button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="person">
+                            <img src="assets/layout/images/dashboard/leader-3.png" alt="poseidon-layout" />
+                            <p>Matheus Pontel</p>
+                        </div>
+                        <div class="person-numbers">
+                            <button type="button" pButton icon="pi pi-ellipsis-v"
+                                class="p-button-secondary p-button-outlined"
+                                (click)="selectedItem = 2; menu7.toggle($event)"></button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="person">
+                            <img src="assets/images/people/di.png" alt="poseidon-layout" />
+                            <p>Diovana Mazur</p>
+                        </div>
+                        <div class="person-numbers">
+                            <button type="button" pButton icon="pi pi-ellipsis-v"
+                                class="p-button-secondary p-button-outlined"
+                                (click)="selectedItem = 3; menu7.toggle($event)"></button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="person">
+                            <img src="assets/layout/images/dashboard/leader-4.png" alt="poseidon-layout" />
+                            <p>Helo Illescas</p>
+                        </div>
+                        <div class="person-numbers">
+                            <button type="button" pButton icon="pi pi-ellipsis-v"
+                                class="p-button-secondary p-button-outlined"
+                                (click)="selectedItem = 4; menu7.toggle($event)"></button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="person">
+                            <img src="assets/layout/images/dashboard/avatar-dengra.png" alt="poseidon-layout" />
+                            <p>Mari Dengra</p>
+                        </div>
+                        <div class="person-numbers">
+                            <button type="button" pButton icon="pi pi-ellipsis-v"
+                                class="p-button-secondary p-button-outlined"
+                                (click)="selectedItem = 5; menu7.toggle($event)"></button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="person">
+                            <img src="assets/layout/images/dashboard/avatar-conan.png" alt="poseidon-layout" />
+                            <p></p>
+                        </div>
+                        <div class="person-numbers">
+                            <button type="button" pButton icon="pi pi-ellipsis-v"
+                                class="p-button-secondary p-button-outlined"
+                                (click)="selectedItem = 6; menu7.toggle($event)"></button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <p-menu #menu7 [popup]="true" [model]="items"></p-menu>
+
+        <div class="p-col-12 p-md-12 p-xl-6">
+            <div class="card product-list">
+                <div class="card-header">
+                    <h6>Games I associate with pablo</h6>
+                </div>
+                <ul>
+                    <li>
+                        <div class="product">
+                            <img src="assets/images/games/1.jpg" alt="poseidon-layout" />
+                            <div class="product-info">
+                                <p>Genshin Impact</p>
+                                <span>oq posso dizer, pablo é viciadasso nesse game aqkkkk</span>
+                            </div>
+
+                        </div>
+                        <i class="pi pi-circle-off"></i>
+                    </li>
+                    <li>
+                        <div class="product">
+                            <img src="assets/images/games/2.webp" alt="poseidon-layout" />
+                            <div class="product-info">
+                                <p>Wild Rift</p>
+                                <span>se ele n ta on no genshin pode vir leve q ele ta nesse aq</span>
+                            </div>
+
+                        </div>
+                        <i class="pi pi-circle-off"></i>
+                    </li>
+                    <li>
+                        <div class="product">
+                            <img src="assets/images/games/3.jpg" alt="poseidon-layout" />
+                            <div class="product-info">
+                                <p>League of Legends</p>
+                                <span>best lux br????</span>
+                            </div>
+
+                        </div>
+                        <i class="pi pi-circle-off"></i>
+                    </li>
+                    <li>
+                        <div class="product">
+                            <img src="assets/images/games/4.webp" alt="poseidon-layout" />
+                            <div class="product-info">
+                                <p>Point Blank</p>
+                                <span>nunca vi ele joga esse mas ele falou mt pra mim deste gamer aq</span>
+                            </div>
+
+                        </div>
+                        <i class="pi pi-circle-off down"></i>
+                    </li>
+                    <li>
+                        <div class="product">
+                            <img src="assets/images/games/5.jpg" alt="poseidon-layout" />
+                            <div class="product-info">
+                                <p>Transformice</p>
+                                <span>mlk pablo é vencedor mundial deste, falo</span>
+                            </div>
+
+                        </div>
+                        <i class="pi pi-circle-off"></i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="p-col-12 p-md-12 p-xl-3">
+            <div class="card tasks">
+                <img src="./../../../../assets/gif/3.gif" alt="a">
+            </div>
+        </div>
+
+        <div class="p-col-12 p-md-12 p-xl-6">
+            <div class="card tasks">
+                <div class="card-header">
+                    <h6>Tasks</h6>
+                </div>
+                <span style="font-size: 0.9em; font-weight: 600;">
+                    This site is a tribute to Pablo Elizandro Fiori, a simply incredible person who cannot be explained
+                    in words, the day of the launch of this site will be the birth day of one of the most important
+                    people in my life, I hope this memory is very well received.
+                    You are a wonderful person, you were a vital part of my life until the moment I am writing this and
+                    beyond, I hope you enjoy this very special day that is your birthday.
+                </span>
+                <hr>
+                <div style="margin: auto; text-align: center;">
+                    <img src="./../../../../assets/gif/1.gif" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="p-col-12 p-md-12 p-xl-3">
+            <div class="card tasks">
+                <img src="./../../../../assets/gif/3.gif">
+            </div>
+        </div>
+    </div>
+</div>

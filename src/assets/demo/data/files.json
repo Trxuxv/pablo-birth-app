@@ -2,9 +2,9 @@
     "data": [
         {
             "key": "0",
-            "label": "Documents",
+            "label": "Victoria",
             "data": "Documents Folder",
-            "icon": "pi pi-fw pi-inbox",
+            "icon": "pi pi-fw pi-user",
             "children": [{
                 "key": "0-0",
                 "label": "Work",
@@ -14,9 +14,9 @@
             },
             {
                 "key": "0-1",
-                "label": "Home",
-                "data": "Home Folder",
-                "icon": "pi pi-fw pi-home",
+                "label": "user",
+                "data": "user Folder",
+                "icon": "pi pi-fw pi-user",
                 "children": [{ "key": "0-1-0", "label": "Invoices.txt", "icon": "pi pi-fw pi-file", "data": "Invoices for this month" }]
             }]
         },
