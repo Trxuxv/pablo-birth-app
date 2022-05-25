@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { AppBreadcrumbService } from './../../../app.breadcrumb.service';
 import { AppMainComponent } from 'src/app/app.main.component';
 import { ProductService } from '../../service/productservice';
@@ -31,6 +32,8 @@ export class HomeComponent implements OnInit {
 
     val1 = 1;
 
+    selectedItem: number;
+
     val2 = 2;
 
     orderWeek: any;
@@ -43,7 +46,7 @@ export class HomeComponent implements OnInit {
 
     productsLastWeek: Product[];
 
-    constructor(private productService: ProductService,
+    constructor(private productService: ProductService, public router: Router,
         private breadcrumbService: AppBreadcrumbService, private appMain: AppMainComponent) {
         this.breadcrumbService.setItems([
             { label: 'Main' },
@@ -127,23 +130,6 @@ export class HomeComponent implements OnInit {
             this.trafficChart = this.getTrafficChartData();
         };
 
-        this.goalChart = {
-            labels: [
-                'Complete',
-                'Not Complete',
-                'Extra Tasks',
-            ],
-            datasets: [{
-                data: [200, 62, 10, 90, 90],
-                backgroundColor: [
-                    '#ffffff',
-                    'rgba(255,255,255,.2)',
-                    'rgba(255,255,255,.5)',
-                ],
-                borderWidth: 0,
-            }]
-        };
-
         this.goalOptions = {
             legend: {
                 display: false,
@@ -152,9 +138,8 @@ export class HomeComponent implements OnInit {
         };
 
         this.items = [
-            { label: 'View Profile', icon: 'pi pi-user' },
-            { label: 'Update Profile', icon: 'pi pi-refresh' },
-            { label: 'Delete Profile', icon: 'pi pi-trash' },
+            { label: 'See Options', icon: 'pi pi-comment', command: () => this.OnPeopleHate(this.selectedItem) },
+            { label: 'Profile', icon: 'pi pi-user' },
         ];
 
         this.orderWeek = [
@@ -211,11 +196,7 @@ export class HomeComponent implements OnInit {
         this.trafficChart.datasets[0].data = traffidDataSet[parseInt(event.currentTarget.getAttribute('data-index'))];
     }
 
-    recentSales(event) {
-        if (event.value.code === '0') {
-            this.products = this.productsThisWeek;
-        } else {
-            this.products = this.productsLastWeek;
-        }
+    OnPeopleHate(id: number) {
+        this.router.navigate(['/pabloByPeople/' + id]);
     }
 }

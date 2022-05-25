@@ -44,6 +44,7 @@ import { AppHelpComponent } from './pages/app.help.component';
                 children: [
                     { path: '', component: DashboardDemoComponent },
                     { path: 'home', component: HomeComponent },
+                    { path: 'pabloByPeople/:id', component: HomeComponent },
                     { path: 'uikit/formlayout', component: FormLayoutDemoComponent },
                     { path: 'uikit/floatlabel', component: FloatLabelDemoComponent },
                     { path: 'uikit/invalidstate', component: InvalidStateDemoComponent },
