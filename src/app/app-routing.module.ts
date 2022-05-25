@@ -35,6 +35,7 @@ import { AppCrudComponent } from './pages/app.crud.component';
 import { AppTimelineDemoComponent } from './pages/app.timelinedemo.component';
 import { AppInvoiceComponent } from './pages/app.invoice.component';
 import { AppHelpComponent } from './pages/app.help.component';
+import { PabloByPeopleComponent } from './demo/view/pablo-by-people/pablo-by-people.component';
 
 @NgModule({
     imports: [
@@ -44,7 +45,7 @@ import { AppHelpComponent } from './pages/app.help.component';
                 children: [
                     { path: '', component: DashboardDemoComponent },
                     { path: 'home', component: HomeComponent },
-                    { path: 'pabloByPeople/:id', component: HomeComponent },
+                    { path: 'pabloByPeople/:id', component: PabloByPeopleComponent },
                     { path: 'uikit/formlayout', component: FormLayoutDemoComponent },
                     { path: 'uikit/floatlabel', component: FloatLabelDemoComponent },
                     { path: 'uikit/invalidstate', component: InvalidStateDemoComponent },
