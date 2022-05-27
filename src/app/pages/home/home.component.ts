@@ -1,14 +1,14 @@
 import { Router } from '@angular/router';
-import { AppBreadcrumbService } from './../../../app.breadcrumb.service';
 import { AppMainComponent } from 'src/app/app.main.component';
-import { ProductService } from '../../service/productservice';
 import { Component, OnInit } from '@angular/core';
-import { Product } from '../../domain/product';
 import { MenuItem } from 'primeng/api';
+import { Product } from 'src/app/demo/domain/product';
+import { ProductService } from 'src/app/demo/service/productservice';
+import { AppBreadcrumbService } from 'src/app/app.breadcrumb.service';
 
 @Component({
     templateUrl: './home.component.html',
-    styleUrls: ['../tabledemo.scss']
+    styleUrls: ['./home.scss']
 })
 export class HomeComponent implements OnInit {
 

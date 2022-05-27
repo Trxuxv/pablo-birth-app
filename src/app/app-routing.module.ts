@@ -8,7 +8,6 @@ import { PanelsDemoComponent } from './demo/view/panelsdemo.component';
 import { MenusDemoComponent } from './demo/view/menusdemo.component';
 import { MediaDemoComponent } from './demo/view/mediademo.component';
 import { MiscDemoComponent } from './demo/view/miscdemo.component';
-import { HomeComponent } from './demo/view/home/home.component';
 import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { EmptyDemoComponent } from './demo/view/emptydemo.component';
@@ -38,6 +37,7 @@ import { AppHelpComponent } from './pages/app.help.component';
 import { AuthGuard } from './auth/auth.guard';
 import { PabloByPeopleComponent } from './demo/view/pablo-by-people/pablo-by-people.component';
 import { AppLoginComponent } from './pages/login/login.component';
+import { HomeComponent } from './pages/home/home.component';
 
 @NgModule({
     imports: [

@@ -20,6 +20,7 @@ export class LoginService {
                 }
                 else {
                     localStorage.clear();
+                    return "User or password invalid.";
                 }
             });
     }

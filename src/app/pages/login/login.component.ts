@@ -1,4 +1,4 @@
-import { FormControl, FormGroup } from '@angular/forms';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { LoginService } from './login.service';
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
@@ -9,9 +9,11 @@ import { Router } from '@angular/router';
 })
 export class AppLoginComponent {
 
+  errorMessage: string;
+
   loginForm = new FormGroup({
-    login: new FormControl(''),
-    password: new FormControl(''),
+    login: new FormControl('', Validators.required),
+    password: new FormControl('', Validators.required),
   });
 
   constructor(private service: LoginService, private router: Router) {
@@ -19,7 +21,8 @@ export class AppLoginComponent {
 
   onSave() {
     this.service.login(this.loginForm.get("login").value, this.loginForm.get("password").value)
-      .then(() => {
+      .then(x => {
+        this.errorMessage = x.toString();
         var isAuthenticated = localStorage.getItem("token");
         if (isAuthenticated !== null) {
           this.router.navigate(['/', 'home']);
