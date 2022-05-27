@@ -29,7 +29,7 @@ import { Component, OnInit } from '@angular/core';
                             <a href="#" (click)="appMain.onTopbarItemClick($event,profile)">
                                 <img class="profile-image" src="{{userLogged?.image}}" alt="demo">
                                 <div class="profile-info">
-                                    <h6>Peter Taylor</h6>
+                                    <h6>{{userLogged?.name}}</h6>
                                     <span>Webmaster</span>
                                 </div>
                             </a>
@@ -38,26 +38,14 @@ import { Component, OnInit } from '@angular/core';
                                 <li class="layout-submenu-header">
                                     <img class="profile-image" src="{{userLogged?.image}}" alt="demo">
                                     <div class="profile-info">
-                                        <h6>Peter Taylor</h6>
+                                    <h6>{{userLogged?.name}}</h6>
                                         <span>Webmaster</span>
                                     </div>
                                 </li>
                                 <li role="menuitem">
                                     <a href="#" (click)="appMain.onTopbarSubItemClick($event)">
-                                        <i class="pi pi-cog"></i>
-                                        <h6>Settings</h6>
-                                    </a>
-                                </li>
-                                <li role="menuitem">
-                                    <a href="#" (click)="appMain.onTopbarSubItemClick($event)">
-                                        <i class="pi pi-file-o"></i>
-                                        <h6>Terms of Usage</h6>
-                                    </a>
-                                </li>
-                                <li role="menuitem">
-                                    <a href="#" (click)="appMain.onTopbarSubItemClick($event)">
-                                        <i class="pi pi-compass"></i>
-                                        <h6>Support</h6>
+                                        <i class="pi pi-user"></i>
+                                        <h6>Profile</h6>
                                     </a>
                                 </li>
                                 <li role="menuitem">

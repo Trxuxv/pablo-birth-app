@@ -1,21 +1,16 @@
 <div class="login-body">
     <div class="login-wrapper">
         <div class="login-panel">
-            <a [routerLink]="['/']" class="logo">
-                <img src="assets/layout/images/logo-poseidon-dark.svg" alt="poseidon-layout" />
-            </a>
             <form [formGroup]="loginForm">
                 <div class="login-form form-group">
-                    <h2>Login To Your Premium Account</h2>
-                    <p>You don't have an account? <a href="#"> Sign up</a></p>
+                    <h2>Login To Pablo App</h2>
+                    <h6>Try a new experience as a close person of Pablo</h6>
                     <input type="text" autocomplete="off" formControlName="login" pInputText placeholder="User">
                     <input type="password" autocomplete="off" formControlName="password" pInputText
                         placeholder="Password">
                     <button type="submit" pButton pRipple label="LOGIN" (click)="onSave()" type="button"></button>
                 </div>
             </form>
-
-            <p>A problem? <a href="#" (click)="onSave()">Click here</a> and let us help you.</p>
         </div>
     </div>
 </div>

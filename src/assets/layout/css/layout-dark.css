@@ -2742,8 +2742,8 @@ p:last-child {
 }
 
 .login-body {
-  background: linear-gradient(180deg, #525D72 0%, #69768D 100%);
-  color: #c3ccdd;
+  background: linear-gradient(180deg, #020202 0%, #3d1705 100%);
+  color: #eae1de;
   height: 100vh;
 }
 .login-body .login-wrapper {
@@ -2757,15 +2757,18 @@ p:last-child {
 }
 .login-body .login-wrapper .login-panel {
   width: 30%;
-  height: 100%;
+  padding: 30vh 0vh;
+  height: auto;
+  background-color: black;
   text-align: center;
-  padding: 40px 20px;
+  /* padding: 40px 20px; */
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
   align-items: center;
   -ms-flex-pack: justify;
-  justify-content: space-between;
+  justify-content: center;
+  /* justify-content: space-between; */
   -ms-flex-direction: column;
   flex-direction: column;
 }
