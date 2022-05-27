@@ -1,3 +1,5 @@
+import { PabloByPeopleService } from './demo/view/pablo-by-people/people-by-people.service';
+import { PabloByPeopleComponent } from './demo/view/pablo-by-people/pablo-by-people.component';
 import { HomeComponent } from './demo/view/home/home.component';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -244,6 +246,7 @@ import { AppBreadcrumbService } from './app.breadcrumb.service';
         AppFooterComponent,
         DashboardDemoComponent,
         FormLayoutDemoComponent,
+        PabloByPeopleComponent,
         FloatLabelDemoComponent,
         InvalidStateDemoComponent,
         InputDemoComponent,
@@ -281,7 +284,8 @@ import { AppBreadcrumbService } from './app.breadcrumb.service';
     providers: [
         { provide: LocationStrategy, useClass: HashLocationStrategy },
         CountryService, CustomerService, EventService, IconService, NodeService,
-        PhotoService, ProductService, MenuService, AppBreadcrumbService
+        PhotoService, ProductService, MenuService, AppBreadcrumbService,
+        PabloByPeopleService
     ],
     bootstrap: [AppComponent]
 })
