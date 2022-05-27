@@ -18,7 +18,6 @@ import { DocumentationComponent } from './demo/view/documentation.component';
 import { AppMainComponent } from './app.main.component';
 import { AppErrorComponent } from './pages/app.error.component';
 import { AppAccessdeniedComponent } from './pages/app.accessdenied.component';
-import { AppLoginComponent } from './pages/app.login.component';
 import { InputDemoComponent } from './demo/view/inputdemo.component';
 import { FloatLabelDemoComponent } from './demo/view/floatlabeldemo.component';
 import { ButtonDemoComponent } from './demo/view/buttondemo.component';
@@ -37,6 +36,7 @@ import { AppTimelineDemoComponent } from './pages/app.timelinedemo.component';
 import { AppInvoiceComponent } from './pages/app.invoice.component';
 import { AppHelpComponent } from './pages/app.help.component';
 import { PabloByPeopleComponent } from './demo/view/pablo-by-people/pablo-by-people.component';
+import { AppLoginComponent } from './pages/login/login.component';
 
 @NgModule({
     imports: [
@@ -46,8 +46,7 @@ import { PabloByPeopleComponent } from './demo/view/pablo-by-people/pablo-by-peo
                 children: [
                     { path: '', component: DashboardDemoComponent, canActivate: [AuthGuard] },
                     { path: 'home', component: HomeComponent, canActivate: [AuthGuard] },
-                    { path: 'pabloByPeople/:id', component: HomeComponent, canActivate: [AuthGuard] },
-                    { path: 'pabloByPeople/:id', component: PabloByPeopleComponent },
+                    { path: 'pabloByPeople/:id', component: PabloByPeopleComponent},
                     { path: 'uikit/formlayout', component: FormLayoutDemoComponent },
                     { path: 'uikit/floatlabel', component: FloatLabelDemoComponent },
                     { path: 'uikit/invalidstate', component: InvalidStateDemoComponent },

@@ -1,6 +1,9 @@
+import { PeopleModel } from './pages/login/models/people.model';
+import { Router } from '@angular/router';
+import { LoginService } from './pages/login/login.service';
 import { AppMainComponent } from './app.main.component';
 import { AppComponent } from './app.component';
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
     selector: 'app-topbar',
@@ -24,7 +27,7 @@ import { Component } from '@angular/core';
                         <li #profile class="topbar-item user-profile"
                             [ngClass]="{'active-topmenuitem':appMain.activeTopbarItem === profile}">
                             <a href="#" (click)="appMain.onTopbarItemClick($event,profile)">
-                                <img class="profile-image" src="assets/layout/images/avatar-profile.png" alt="demo">
+                                <img class="profile-image" src="{{userLogged?.image}}" alt="demo">
                                 <div class="profile-info">
                                     <h6>Peter Taylor</h6>
                                     <span>Webmaster</span>
@@ -33,7 +36,7 @@ import { Component } from '@angular/core';
 
                             <ul class="fadeInDown">
                                 <li class="layout-submenu-header">
-                                    <img class="profile-image" src="assets/layout/images/avatar-profile.png" alt="demo">
+                                    <img class="profile-image" src="{{userLogged?.image}}" alt="demo">
                                     <div class="profile-info">
                                         <h6>Peter Taylor</h6>
                                         <span>Webmaster</span>
@@ -58,7 +61,7 @@ import { Component } from '@angular/core';
                                     </a>
                                 </li>
                                 <li role="menuitem">
-                                    <a href="#" (click)="appMain.onTopbarSubItemClick($event)">
+                                    <a (click)="onLoggout()">
                                         <i class="pi pi-power-off"></i>
                                         <h6>Logout</h6>
                                     </a>
@@ -71,7 +74,21 @@ import { Component } from '@angular/core';
         </div>
     `
 })
-export class AppTopBarComponent {
-    constructor(public appMain: AppMainComponent, public app: AppComponent) {
+export class AppTopBarComponent implements OnInit {
+
+    userLogged: PeopleModel;
+
+    constructor(public appMain: AppMainComponent, public app: AppComponent, private service: LoginService, private route: Router) {
     }
+
+    ngOnInit() {
+        this.service.getDataUserLoggedIn()
+            .then(x => this.userLogged = x)
+    }
+
+    onLoggout() {
+        this.service.logout();
+        this.route.navigate([('/login')])
+    }
+
 }
