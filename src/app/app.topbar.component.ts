@@ -39,7 +39,7 @@ import { LoginService } from './pages/login/login.service';
                                     <img class="profile-image" src="{{userLogged?.image}}" alt="demo">
                                     <div class="profile-info">
                                     <h6>{{userLogged?.name}}</h6>
-                                        <span>Webmaster</span>
+                                    <span>{{userLogged?.profile}}</span>
                                     </div>
                                 </li>
                                 <li role="menuitem">
