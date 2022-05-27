@@ -43,7 +43,7 @@ import { LoginService } from './pages/login/login.service';
                                     </div>
                                 </li>
                                 <li role="menuitem">
-                                    <a href="#" (click)="appMain.onTopbarSubItemClick($event)">
+                                    <a  [routerLink]="['/profile/', userLogged.id]" (click)="appMain.onTopbarSubItemClick($event)">
                                         <i class="pi pi-user"></i>
                                         <h6>Profile</h6>
                                     </a>

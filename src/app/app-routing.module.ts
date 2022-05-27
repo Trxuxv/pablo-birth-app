@@ -1,4 +1,4 @@
-import { AuthGuard } from './auth/auth.guard';
+import { ProfileComponent } from './pages/profile/profile.component';
 import { InvalidStateDemoComponent } from './demo/view/invalidstatedemo.component';
 import { FormLayoutDemoComponent } from './demo/view/formlayoutdemo.component';
 import { DashboardDemoComponent } from './demo/view/dashboarddemo.component';
@@ -35,6 +35,7 @@ import { AppCrudComponent } from './pages/app.crud.component';
 import { AppTimelineDemoComponent } from './pages/app.timelinedemo.component';
 import { AppInvoiceComponent } from './pages/app.invoice.component';
 import { AppHelpComponent } from './pages/app.help.component';
+import { AuthGuard } from './auth/auth.guard';
 import { PabloByPeopleComponent } from './demo/view/pablo-by-people/pablo-by-people.component';
 import { AppLoginComponent } from './pages/login/login.component';
 
@@ -46,7 +47,8 @@ import { AppLoginComponent } from './pages/login/login.component';
                 children: [
                     { path: '', component: DashboardDemoComponent, canActivate: [AuthGuard] },
                     { path: 'home', component: HomeComponent, canActivate: [AuthGuard] },
-                    { path: 'pabloByPeople/:id', component: PabloByPeopleComponent},
+                    { path: 'pabloByPeople/:id', component: PabloByPeopleComponent, canActivate: [AuthGuard] },
+                    { path: 'profile/:id', component: ProfileComponent, canActivate: [AuthGuard] },
                     { path: 'uikit/formlayout', component: FormLayoutDemoComponent },
                     { path: 'uikit/floatlabel', component: FloatLabelDemoComponent },
                     { path: 'uikit/invalidstate', component: InvalidStateDemoComponent },

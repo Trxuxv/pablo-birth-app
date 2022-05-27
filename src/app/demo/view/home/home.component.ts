@@ -139,7 +139,7 @@ export class HomeComponent implements OnInit {
 
         this.items = [
             { label: 'See Options', icon: 'pi pi-comment', command: () => this.OnPeopleHate(this.selectedItem) },
-            { label: 'Profile', icon: 'pi pi-user' },
+            { label: 'Profile', icon: 'pi pi-user', command: () => this.OnPeopleProfile(this.selectedItem) },
         ];
 
         this.orderWeek = [
@@ -198,5 +198,9 @@ export class HomeComponent implements OnInit {
 
     OnPeopleHate(id: number) {
         this.router.navigate(['/pabloByPeople/' + id]);
+    }
+
+    OnPeopleProfile(id: number) {
+        this.router.navigate(['/profile/' + id]);
     }
 }

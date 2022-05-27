@@ -1,6 +1,5 @@
+import { ProfileComponent } from './pages/profile/profile.component';
 import { LoginService } from './pages/login/login.service';
-import { PabloByPeopleService } from './demo/view/pablo-by-people/people-by-people.service';
-import { PabloByPeopleComponent } from './demo/view/pablo-by-people/pablo-by-people.component';
 import { HomeComponent } from './demo/view/home/home.component';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -132,7 +131,6 @@ import { AppInvoiceComponent } from './pages/app.invoice.component';
 import { AppHelpComponent } from './pages/app.help.component';
 import { AppErrorComponent } from './pages/app.error.component';
 import { AppAccessdeniedComponent } from './pages/app.accessdenied.component';
-import { AppLoginComponent } from './pages/login/login.component';
 
 import { CountryService } from './demo/service/countryservice';
 import { CustomerService } from './demo/service/customerservice';
@@ -144,6 +142,9 @@ import { ProductService } from './demo/service/productservice';
 
 import { MenuService } from './app.menu.service';
 import { AppBreadcrumbService } from './app.breadcrumb.service';
+import { AppLoginComponent } from './pages/login/login.component';
+import { PabloByPeopleService } from './demo/view/pablo-by-people/people-by-people.service';
+import { PabloByPeopleComponent } from './demo/view/pablo-by-people/pablo-by-people.component';
 
 @NgModule({
     imports: [
@@ -238,6 +239,7 @@ import { AppBreadcrumbService } from './app.breadcrumb.service';
     declarations: [
         AppComponent,
         AppMainComponent,
+        ProfileComponent,
         AppConfigComponent,
         AppMenuComponent,
         AppMenuitemComponent,

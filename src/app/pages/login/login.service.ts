@@ -35,6 +35,15 @@ export class LoginService {
             });
     }
 
+    getDataUserById(id) {
+        return this.http.get<any>('assets/demo/data/people/people.json')
+            .toPromise()
+            .then(res => res.data as PeopleModel[])
+            .then(data => {
+                return data.find(x => x.id == id);
+            });
+    }
+
     logout() {
         localStorage.clear();
     }
