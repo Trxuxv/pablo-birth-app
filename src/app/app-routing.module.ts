@@ -1,3 +1,4 @@
+import { AuthGuard } from './auth/auth.guard';
 import { InvalidStateDemoComponent } from './demo/view/invalidstatedemo.component';
 import { FormLayoutDemoComponent } from './demo/view/formlayoutdemo.component';
 import { DashboardDemoComponent } from './demo/view/dashboarddemo.component';
@@ -6,10 +7,10 @@ import { OverlaysDemoComponent } from './demo/view/overlaysdemo.component';
 import { PanelsDemoComponent } from './demo/view/panelsdemo.component';
 import { MenusDemoComponent } from './demo/view/menusdemo.component';
 import { MediaDemoComponent } from './demo/view/mediademo.component';
+import { MiscDemoComponent } from './demo/view/miscdemo.component';
 import { HomeComponent } from './demo/view/home/home.component';
 import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
-import { MiscDemoComponent } from './demo/view/miscdemo.component';
 import { EmptyDemoComponent } from './demo/view/emptydemo.component';
 import { ChartsDemoComponent } from './demo/view/chartsdemo.component';
 import { FileDemoComponent } from './demo/view/filedemo.component';
@@ -42,9 +43,9 @@ import { AppHelpComponent } from './pages/app.help.component';
             {
                 path: '', component: AppMainComponent,
                 children: [
-                    { path: '', component: DashboardDemoComponent },
-                    { path: 'home', component: HomeComponent },
-                    { path: 'pabloByPeople/:id', component: HomeComponent },
+                    { path: '', component: DashboardDemoComponent, canActivate: [AuthGuard] },
+                    { path: 'home', component: HomeComponent, canActivate: [AuthGuard] },
+                    { path: 'pabloByPeople/:id', component: HomeComponent, canActivate: [AuthGuard] },
                     { path: 'uikit/formlayout', component: FormLayoutDemoComponent },
                     { path: 'uikit/floatlabel', component: FloatLabelDemoComponent },
                     { path: 'uikit/invalidstate', component: InvalidStateDemoComponent },

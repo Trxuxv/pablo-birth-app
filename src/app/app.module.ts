@@ -1,6 +1,6 @@
 import { HomeComponent } from './demo/view/home/home.component';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserModule } from '@angular/platform-browser';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
@@ -223,6 +223,8 @@ import { AppBreadcrumbService } from './app.breadcrumb.service';
         TimelineModule,
         ToastModule,
         ToggleButtonModule,
+        FormsModule,
+        ReactiveFormsModule,
         ToolbarModule,
         TooltipModule,
         TreeModule,
