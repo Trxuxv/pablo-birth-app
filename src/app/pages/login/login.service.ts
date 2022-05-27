@@ -12,7 +12,7 @@ export class LoginService {
             .toPromise()
             .then(res => res.data as PeopleModel[])
             .then(data => {
-                var userAuthenticated = data.find(x => data.find(x => x.user == user && x.password == password))
+                var userAuthenticated = data.find(x => x.user == user && x.password == password)
 
                 if (userAuthenticated) {
                     localStorage.setItem("token", userAuthenticated.token)
@@ -30,7 +30,7 @@ export class LoginService {
             .then(res => res.data as PeopleModel[])
             .then(data => {
                 var token = localStorage.getItem("token")
-                var userAuthenticated = data.find(x => data.find(x => x.token == token))
+                var userAuthenticated = data.find(x => x.token == token)
                 return userAuthenticated;
             });
     }

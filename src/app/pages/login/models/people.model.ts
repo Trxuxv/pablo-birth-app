@@ -8,6 +8,7 @@ export interface PeopleModel {
     token?: string;
     status?: string;
     company?: string;
+    profile?: string;
     password?: string;
     activity?: number;
 }

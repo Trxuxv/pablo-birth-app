@@ -1,9 +1,9 @@
-import { PeopleModel } from './pages/login/models/people.model';
 import { Router } from '@angular/router';
-import { LoginService } from './pages/login/login.service';
 import { AppMainComponent } from './app.main.component';
 import { AppComponent } from './app.component';
 import { Component, OnInit } from '@angular/core';
+import { PeopleModel } from './pages/login/models/people.model';
+import { LoginService } from './pages/login/login.service';
 
 @Component({
     selector: 'app-topbar',
@@ -30,7 +30,7 @@ import { Component, OnInit } from '@angular/core';
                                 <img class="profile-image" src="{{userLogged?.image}}" alt="demo">
                                 <div class="profile-info">
                                     <h6>{{userLogged?.name}}</h6>
-                                    <span>Webmaster</span>
+                                    <span>{{userLogged?.profile}}</span>
                                 </div>
                             </a>
 
