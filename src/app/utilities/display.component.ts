@@ -1,14 +1,43 @@
 import { AppBreadcrumbService } from '../app.breadcrumb.service';
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { PhotoService } from '../demo/service/photoservice';
 
 @Component({
     templateUrl: './display.component.html'
 })
-export class DisplayComponent {
-    constructor(private breadcrumbService: AppBreadcrumbService) {
+export class DisplayComponent  implements OnInit{
+    constructor(private breadcrumbService: AppBreadcrumbService, private photoService: PhotoService ) {
         this.breadcrumbService.setItems([
             { label: 'Utilities' },
             { label: 'Display', routerLink: ['/utilities/display'] }
         ]);
+    }
+
+    galleriaResponsiveOptions: any[] = [
+        {
+            breakpoint: '1024px',
+            numVisible: 5
+        },
+        {
+            breakpoint: '960px',
+            numVisible: 4
+        },
+        {
+            breakpoint: '768px',
+            numVisible: 3
+        },
+        {
+            breakpoint: '560px',
+            numVisible: 1
+        }
+    ];
+
+
+    images: any[];
+
+    ngOnInit(): void {
+        this.photoService.getImages().then(images => {
+            this.images = images;
+        });
     }
 }

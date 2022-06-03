@@ -43,9 +43,9 @@ export class AppMenuComponent implements OnInit {
                 ]
             },
             {
-                label: 'Utilities', icon: 'pi pi-fw pi-compass', routerLink: ['utilities'],
+                label: 'Media', icon: 'pi pi-fw pi-compass', routerLink: ['utilities'],
                 items: [
-                    { label: 'Display', icon: 'pi pi-fw pi-desktop', routerLink: ['utilities/display'] },
+                    { label: 'Photos', icon: 'pi pi-fw pi-desktop', routerLink: ['utilities/display'] },
                     { label: 'Elevation', icon: 'pi pi-fw pi-external-link', routerLink: ['utilities/elevation'] },
                     { label: 'FlexBox', icon: 'pi pi-fw pi-directions', routerLink: ['utilities/flexbox'] },
                     { label: 'Icons', icon: 'pi pi-fw pi-search', routerLink: ['utilities/icons'] },
