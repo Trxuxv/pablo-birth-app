@@ -57,8 +57,12 @@
 				</div>
 				<img *ngIf="correct > 3 && correct < 6" src="./../../../assets/demo/images/avatar/amyelsner.png" alt=""
 					width="300px" style="border-radius: 15px;">
-				<img *ngIf="correct >= 6 && correct < 10" src="./../../../assets/demo/images/quiz/okay.jpg" alt=""
-					width="300px" style="border-radius: 15px;">
+					
+				<div *ngIf="correct >= 6 && correct < 10">
+					<p>É até que você conhece o pablo :p</p>
+					<img *ngIf="correct >= 6 && correct < 10" src="./../../../assets/demo/images/quiz/okay.jpg" alt=""
+						width="300px" style="border-radius: 15px;">
+				</div>
 				<!-- <img src="./../../../assets/demo/images/avatar/amyelsner.png" alt=""> -->
 			</div>
 		</div>
