@@ -10,6 +10,7 @@
             "status": "unqualified",
             "activity": 17,
             "token": "qQREeEAsdasDeb%",
+            "background": "'./../../../assets/images/background/3.webp'",
             "user": "debora.maciel",
             "password": "123654",
             "profile": "Soulmate"
@@ -41,6 +42,7 @@
             "token": "qQREeEAsdasDi%",
             "user": "diovana.mazur",
             "password": "123654",
+            "background": "'./../../../assets/images/background/3.webp'",
             "profile": "Best Friend"
         },
         {
@@ -54,6 +56,7 @@
             "date": "2020-09-15",
             "status": "new",
             "activity": 37,
+            "background": "'./../../../assets/images/background/3.webp'",
             "representative": {
                 "name": "Xuxue Feng",
                 "image": "xuxuefeng.png"
