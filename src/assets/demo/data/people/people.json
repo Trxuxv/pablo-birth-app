@@ -23,6 +23,7 @@
             "date": "2015-09-13",
             "status": "unqualified",
             "activity": 17,
+            "background": "'./../../../assets/images/background/2.webp'",
             "token": "qQREeEAsdasMath%",
             "user": "matheus.pontel",
             "password": "123654",

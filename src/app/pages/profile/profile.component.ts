@@ -16,6 +16,7 @@ export class ProfileComponent implements OnInit {
     ngOnInit() {
         this.route.params.subscribe((params: Params) => {
             this.service.getDataUserById(params['id']).then(x => {
+                console.log(x)
                 this.user = x
             });
         })

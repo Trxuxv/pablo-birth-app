@@ -11,4 +11,5 @@ export interface PeopleModel {
     profile?: string;
     password?: string;
     activity?: number;
+    background?: string;
 }
