@@ -34,7 +34,7 @@ export class AppMenuComponent implements OnInit {
                     { label: 'Tree', icon: 'pi pi-fw pi-share-alt', routerLink: ['/uikit/tree'] },
                     { label: 'Panel', icon: 'pi pi-fw pi-tablet', routerLink: ['/uikit/panel'] },
                     { label: 'Overlay', icon: 'pi pi-fw pi-clone', routerLink: ['/uikit/overlay'] },
-                    { label: 'Media', icon: 'pi pi-fw pi-image', routerLink: ['/uikit/media'] },
+                    { label: 'Media', icon: 'pi pi-fw pi-images', routerLink: ['/uikit/media'] },
                     { label: 'Menu', icon: 'pi pi-fw pi-bars', routerLink: ['/uikit/menu'] },
                     { label: 'Message', icon: 'pi pi-fw pi-comment', routerLink: ['/uikit/message'] },
                     { label: 'File', icon: 'pi pi-fw pi-file', routerLink: ['/uikit/file'] },
@@ -43,9 +43,9 @@ export class AppMenuComponent implements OnInit {
                 ]
             },
             {
-                label: 'Media', icon: 'pi pi-fw pi-compass', routerLink: ['utilities'],
+                label: 'Media', icon: 'pi pi-fw pi-image', routerLink: ['utilities'],
                 items: [
-                    { label: 'Photos', icon: 'pi pi-fw pi-desktop', routerLink: ['utilities/display'] },
+                    { label: 'Photos', icon: 'pi pi-fw pi-image', routerLink: ['utilities/display'] },
                     { label: 'Elevation', icon: 'pi pi-fw pi-external-link', routerLink: ['utilities/elevation'] },
                     { label: 'FlexBox', icon: 'pi pi-fw pi-directions', routerLink: ['utilities/flexbox'] },
                     { label: 'Icons', icon: 'pi pi-fw pi-search', routerLink: ['utilities/icons'] },
@@ -57,9 +57,9 @@ export class AppMenuComponent implements OnInit {
                 ]
             },
             {
-                label: 'Pages', icon: 'pi pi-fw pi-briefcase', routerLink: ['/pages'],
+                label: 'Others', icon: 'pi pi-fw pi-circle-off', routerLink: ['/pages'],
                 items: [
-                    { label: 'Crud', icon: 'pi pi-fw pi-pencil', routerLink: ['/pages/crud'] },
+                    { label: 'Pablo Quizz', icon: 'pi pi-fw pi-pencil', routerLink: ['/pages/crud'] },
                     { label: 'Calendar', icon: 'pi pi-fw pi-calendar-plus', routerLink: ['/pages/calendar'] },
                     { label: 'Timeline', icon: 'pi pi-fw pi-calendar', routerLink: ['/pages/timeline'] },
                     { label: 'Landing', icon: 'pi pi-fw pi-globe', url: 'assets/pages/landing.html', target: '_blank' },
@@ -68,7 +68,7 @@ export class AppMenuComponent implements OnInit {
                     { label: 'Help', icon: 'pi pi-fw pi-question-circle', routerLink: ['/pages/help'] },
                     { label: 'Error', icon: 'pi pi-fw pi-times-circle', routerLink: ['/error'] },
                     { label: 'Access Denied', icon: 'pi pi-fw pi-lock', routerLink: ['/access'] },
-                    { label: 'Empty', icon: 'pi pi-fw pi-circle-off', routerLink: ['/pages/empty'] }
+                    { label: 'Final Considerations', icon: 'pi pi-fw pi-circle-off', routerLink: ['/pages/empty'] }
                 ]
             }
         ];

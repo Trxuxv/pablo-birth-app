@@ -124,7 +124,6 @@ import { WidgetsComponent } from './utilities/widgets.component';
 import { SpacingComponent } from './utilities/spacing.component';
 import { TypographyComponent } from './utilities/typography.component';
 import { TextComponent } from './utilities/text.component';
-import { AppCrudComponent } from './pages/app.crud.component';
 import { AppTimelineDemoComponent } from './pages/app.timelinedemo.component';
 import { AppInvoiceComponent } from './pages/app.invoice.component';
 import { AppHelpComponent } from './pages/app.help.component';
@@ -145,6 +144,7 @@ import { AppLoginComponent } from './pages/login/login.component';
 import { PabloByPeopleService } from './demo/view/pablo-by-people/people-by-people.service';
 import { PabloByPeopleComponent } from './demo/view/pablo-by-people/pablo-by-people.component';
 import { HomeComponent } from './pages/home/home.component';
+import { AppCrudComponent } from './pages/quizz/app.crud.component';
 
 @NgModule({
     imports: [

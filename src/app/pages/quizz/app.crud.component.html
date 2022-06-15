@@ -1,0 +1,72 @@
+<div class="p-grid">
+	<div class="p-col-12">
+		<p-toast></p-toast>
+
+		<div class="card">
+			<p-toolbar styleClass="p-mb-4">
+				<ng-template pTemplate="left">
+					<h4>Quizz</h4>
+				</ng-template>
+
+				<ng-template pTemplate="right">
+					<button pButton pRipple label="Play" value="{{buttonname}}" icon="pi pi-play"
+						class="p-button-help p-mb-2" *ngIf="!start" (click)="startQuiz()"></button>
+				</ng-template>
+			</p-toolbar>
+			<div class="p-grid">
+				<div class="p-col-2"></div>
+				<div class="p-grid p-col-8">
+					<div class="card p-col-4" *ngIf="start"></div>
+					<div class="card p-col-8" *ngIf="start">
+						<h5>{{currentQuestionSet.question}}</h5>
+						<div *ngFor="let o of currentQuestionSet.option">
+							<label style="cursor: pointer; color: white;">
+								<input type="radio" class="questions" name="{{currentQuestionSet.id}}" id="question"
+									value="{{o.optionid}}" [(ngModel)]="currentQuestionSet.selected" />
+								<span>
+									{{o.name}}
+								</span>
+							</label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<p-toolbar styleClass="p-mb-4" *ngIf="start">
+				<ng-template pTemplate="left">
+					<h5>{{currentIndex+1}}/{{questions.length}}</h5>
+				</ng-template>
+				<div style="float: right;">
+
+				</div>
+				<ng-template pTemplate="right">
+					<button pButton pRipple label="Next" value="Next" icon="pi pi-angle-right"
+						class="p-button-help p-mb-2" *ngIf="(currentIndex+1) != questions.length" (click)="next()">
+					</button>
+					<button pButton pRipple label="Submit" value="Submit" icon="pi pi-check" class="p-button-primary"
+						(click)="submit()" *ngIf="(currentIndex+1) == questions.length">
+					</button>
+				</ng-template>
+			</p-toolbar>
+
+			<div *ngIf="gameover" style="margin: auto; text-align: center; padding-bottom: 1%;">
+				<h5>Resultado: {{correct}}/{{questions.length}}</h5>
+				<div *ngIf="correct <= 3">
+					<p>Parece q você não conhece nem um pouquinho o Pablo hein... :/</p>
+					<img src="./../../../assets/demo/images/quiz/sad.webp" alt="" width="300px"
+						style="border-radius: 15px;">
+				</div>
+				<img *ngIf="correct > 3 && correct < 6" src="./../../../assets/demo/images/avatar/amyelsner.png" alt=""
+					width="300px" style="border-radius: 15px;">
+				<img *ngIf="correct >= 6 && correct < 10" src="./../../../assets/demo/images/quiz/okay.jpg" alt=""
+					width="300px" style="border-radius: 15px;">
+				<!-- <img src="./../../../assets/demo/images/avatar/amyelsner.png" alt=""> -->
+			</div>
+		</div>
+	</div>
+</div>
+
+<style>
+	.questions {
+		width: 10px;
+	}
+</style>
