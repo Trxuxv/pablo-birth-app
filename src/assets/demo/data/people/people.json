@@ -3,7 +3,7 @@
         {
             "id": 1,
             "name": "Débora L. F. Ferreira",
-            "hate": "Bom, o Pablo pra mim é basicamente sinonimo de paz e amor incodicional",
+            "hate": "Bom, o Pablo pra mim é basicamente sinonimo de paz e amor incodicional, nunca presenciei alguém que lutasse tanto por mim igual esse garoto já lutou. Tudo nele é tão admirável e lindo, é aconchegante, é tão bom ter esse ser humaninho na minha vida. Sou tão grata pelo mundo me trazer esse presentinho que se chama Pablo. Amo a voz dele, amo o sorrisinho dele quando ele ta feliz, amo as manias dele, amo como ele se preocupa com quem ama, amo o quanto ele é verdadeiro e sincero não importa a ocasião, amo sua espotaneidade, amo o jeito que brinca das coisas comigo, amo o quanto ele combina comigo em todos os quesitos. De qualquer forma, só nós sabemos o que já vivemos e afinal, a vida já foi incrivel, só por você ter aparecido na minha vida.",
             "image": "assets/images/people/1.png",
             "company": "Benton, John B Jr",
             "date": "2015-09-13",
@@ -18,7 +18,7 @@
         {
             "id": 2,
             "name": "Matheus Pontel",
-            "hate": "Bom, o Pablo pra mim é basicamente sinonimo de paz e amor incodicional",
+            "hate": "Mor, feliz aniversário! Você é todo sensa. Seu sorriso, a maneira com que conversa, as coisas sobre as quais fala, os gestos que faz, os olhinhos meio fechados quando fica feliz. Sou feliz por ter conhecido você e poder participar da sua alegria. Você é a minha outra laranja inteira. Quero passar todos os dias da minha vida com você e todos os seus próximos aniversários também!             Feliz aniversário, mor! Te amo muitão ❤️",
             "image": "./../../../../assets/images/people/2.jpg",
             "company": "Benton, John B Jr",
             "date": "2015-09-13",
@@ -33,7 +33,7 @@
         {
             "id": 3,
             "name": "Diovana Mazur",
-            "hate": "Bom, o Pablo pra mim é basicamente sinonimo de paz e amor incodicional",
+            "hate": "Feliz aniversário meu anjinho, eu desejo toda a felicidade do mundo pra ti sempre. Eu sou muito grata por poder passar mais um ano contigo, e por saber que a gente continua sempre cuidando um do outro. Ter você sempre me lembra que eu não estou sozinha porque você é a pessoa que mais me apoia e torce e por mim, sua empatia e o seu cuidado com todos é uma das coisas que eu mais amo em você, e tenho sorte de receber isso. Sempre fico emocionada quando penso no quanto você acredita em mim mesmo nos momentos ruins e quando nem eu me sinto muito válida, porque faz eu acreditar mais em mim mesma, e isso tem sido tão tão importante. Você costuma ser a primeira pessoa que eu penso quando algo acontece, porque eu não imagino uma rotina onde eu não tenha você pra compartilhar tudo. Sei que você fica triste quando eu estou triste, mas que também é a pessoa mais feliz de todas quando eu estou feliz. A gente já passou por um monte de coisas juntos durante todos esses anos, e sempre cuidou um do outro. Nem imagino como muita coisa seria se eu não tivesse tido você pra me aconselhar, me confortar, e ficar do meu lado. Você faz muita coisa difícil ser bem mais suportável e eu só posso agradecer por não me deixar passar por nada disso sozinha. Depois de todos esses anos você continua sendo meu solzinho, e eu admiro tudo em você. Obrigada por ter um coraçãozinho enorme, por cuidar tanto de todos, por saber ouvir, por ser tão dedicado e inteligente, por ser tão esforçado e amoroso. Espero que você nunca esqueça o anjinho que você é, e como a gente tem sorte de ter você. Um dos meus sonhos é que a gente continue passando pelos próximos anos juntinhos, e que sejamos amigos pra sempre. Eu não quero de jeito nenhum imaginar como seria aqui sem você. Você me faz acreditar que as coisas valem a pena, e queria que sempre se lembrasse do quanto é importante pra mim. Eu te amo pra sempre anjinho, você merece todas as coisas boas do mundo e todo o amor que você deposita nas pessoas. Obrigada por ser você, e por ser parte da minha vida. Você é incrível e é uma das coisas mais bonitas que já me aconteceu. Feliz aniversário Pablo, parabéns por mais um aninho. Eu amo você demais.",
             "image": "./../../../../assets/images/people/3.png",
             "company": "Benton, John B Jr",
             "date": "2015-09-13",
@@ -46,21 +46,34 @@
             "profile": "Best Friend"
         },
         {
-            "id": 1003,
-            "name": "Lenna Paprocki",
-            "country": {
-                "name": "Slovenia",
-                "code": "si"
-            },
-            "company": "Feltz Printing Service",
-            "date": "2020-09-15",
-            "status": "new",
-            "activity": 37,
-            "background": "'./../../../assets/images/background/3.webp'",
-            "representative": {
-                "name": "Xuxue Feng",
-                "image": "xuxuefeng.png"
-            }
+            "id": 4,
+            "name": "Helo",
+            "hate": "Ele é um combo de diversão com aconchego, sua companhia faz bem pra saúde e pra alma. Quem tem ele em sua vida não terá dias ruins, sempre encontrará uma forma de te alegrar e motivar. É parceiro pra todos os rolês, até nos piores kkk. Mesmo que você não mereça ele vai te ajudar de bom grado, pois é dono do coração mais lindo e generoso. Tenho orgulho de te chamar de amigo, te amo Pablo 💕",
+            "image": "assets/images/people/helo/1.jfif",
+            "company": "Benton, John B Jr",
+            "date": "2015-09-13",
+            "status": "unqualified",
+            "activity": 17,
+            "background": "'./../../../assets/images/background/2.webp'",
+            "token": "qQREeEAsdasMath%",
+            "user": "helo.facul",
+            "password": "123654",
+            "profile": "Friend"
+        },
+        {
+            "id": 5,
+            "name": "Mari ",
+            "hate": "Pablito, obrigada por ser você. Obrigada por me entender perfeitamente e estar presente em todos os momentos da minha vida, fico feliz por compartilhar minha vida e completar meus ciclos com você! Te desejo o melhor que o mundo pode te proporcionar, e espero que nossa amizade se firme por anos e anos. Te amo, feliz vida! ❤️",
+            "image": "./../../../../assets/images/mari/1.jpg",
+            "company": "Benton, John B Jr",
+            "date": "2015-09-13",
+            "status": "unqualified",
+            "activity": 17,
+            "background": "'./../../../assets/images/background/2.webp'",
+            "token": "qQREeEAsdasMath%",
+            "user": "mari.facul",
+            "password": "123654",
+            "profile": "Friend"
         }
     ]
 }

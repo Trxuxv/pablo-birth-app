@@ -1,94 +1,178 @@
 {
-    "data":[
+    "data": [
         {
-            "itemImageSrc": "assets/demo/images/galleria/galleria.jpg",
-            "thumbnailImageSrc": "assets/demo/images/galleria/galleria1s.jpg",
+            "itemImageSrc": "assets/images/galery/13.jfif",
+            "thumbnailImageSrc": "assets/images/galery/13.jfif",
             "alt": "Description for Image 1",
             "title": "Title 1"
         },
         {
-            "itemImageSrc": "assets/demo/images/galleria/galleria2.jpg",
-            "thumbnailImageSrc": "assets/demo/images/galleria/galleria2s.jpg",
+            "itemImageSrc": "assets/demo/images/galleria/galleria.jpg",
+            "thumbnailImageSrc": "assets/demo/images/galleria/galleria.jpg",
+            "alt": "Description for Image 1",
+            "title": "Title 1"
+        },
+        {
+            "itemImageSrc": "assets/images/galery/1.jfif",
+            "thumbnailImageSrc": "assets/images/galery/1.jfif",
             "alt": "Description for Image 2",
             "title": "Title 2"
         },
         {
-            "itemImageSrc": "assets/demo/images/galleria/galleria3.jpg",
-            "thumbnailImageSrc": "assets/demo/images/galleria/galleria3s.jpg",
+            "itemImageSrc": "assets/images/galery/12.jfif",
+            "thumbnailImageSrc": "assets/images/galery/12.jfif",
             "alt": "Description for Image 3",
             "title": "Title 3"
         },
         {
-            "itemImageSrc": "assets/demo/images/galleria/galleria4.jpg",
-            "thumbnailImageSrc": "assets/demo/images/galleria/galleria4s.jpg",
+            "itemImageSrc": "assets/images/galery/11.jfif",
+            "thumbnailImageSrc": "assets/images/galery/11.jfif",
             "alt": "Description for Image 4",
             "title": "Title 4"
         },
         {
-            "itemImageSrc": "assets/demo/images/galleria/galleria5.jpg",
-            "thumbnailImageSrc": "assets/demo/images/galleria/galleria5s.jpg",
+            "itemImageSrc": "assets/images/galery/3.jfif",
+            "thumbnailImageSrc": "assets/images/galery/3.jfif",
             "alt": "Description for Image 5",
             "title": "Title 5"
         },
         {
-            "itemImageSrc": "assets/demo/images/galleria/galleria6.jpg",
-            "thumbnailImageSrc": "assets/demo/images/galleria/galleria6s.jpg",
+            "itemImageSrc": "assets/images/galery/4.jfif",
+            "thumbnailImageSrc": "assets/images/galery/4.jfif",
             "alt": "Description for Image 6",
             "title": "Title 6"
         },
         {
-            "itemImageSrc": "assets/demo/images/galleria/galleria7.jpg",
-            "thumbnailImageSrc": "assets/demo/images/galleria/galleria7s.jpg",
+            "itemImageSrc": "assets/images/galery/5.jfif",
+            "thumbnailImageSrc": "assets/images/galery/5.jfif",
             "alt": "Description for Image 7",
             "title": "Title 7"
         },
         {
-            "itemImageSrc": "assets/demo/images/galleria/galleria8.jpg",
-            "thumbnailImageSrc": "assets/demo/images/galleria/galleria8s.jpg",
+            "itemImageSrc": "assets/images/galery/6.jfif",
+            "thumbnailImageSrc": "assets/images/galery/6.jfif",
             "alt": "Description for Image 8",
             "title": "Title 8"
         },
         {
-            "itemImageSrc": "assets/demo/images/galleria/galleria9.jpg",
-            "thumbnailImageSrc": "assets/demo/images/galleria/galleria9s.jpg",
+            "itemImageSrc": "assets/images/galery/7.jfif",
+            "thumbnailImageSrc": "assets/images/galery/7.jfif",
             "alt": "Description for Image 9",
             "title": "Title 9"
         },
         {
-            "itemImageSrc": "assets/demo/images/galleria/galleria10.jpg",
-            "thumbnailImageSrc": "assets/demo/images/galleria/galleria10s.jpg",
+            "itemImageSrc": "assets/images/galery/10.jfif",
+            "thumbnailImageSrc": "assets/images/galery/10.jfif",
             "alt": "Description for Image 10",
             "title": "Title 10"
         },
         {
-            "itemImageSrc": "assets/demo/images/galleria/galleria11.jpg",
-            "thumbnailImageSrc": "assets/demo/images/galleria/galleria11s.jpg",
+            "itemImageSrc": "assets/images/galery/9.jfif",
+            "thumbnailImageSrc": "assets/images/galery/9.jfif",
             "alt": "Description for Image 11",
             "title": "Title 11"
         },
         {
-            "itemImageSrc": "assets/demo/images/galleria/galleria12.jpg",
-            "thumbnailImageSrc": "assets/demo/images/galleria/galleria12s.jpg",
+            "itemImageSrc": "assets/images/galery/17.jfif",
+            "thumbnailImageSrc": "assets/images/galery/17.jfif",
             "alt": "Description for Image 12",
             "title": "Title 12"
         },
         {
-            "itemImageSrc": "assets/demo/images/galleria/galleria13.jpg",
-            "thumbnailImageSrc": "assets/demo/images/galleria/galleria13s.jpg",
+            "itemImageSrc": "assets/images/galery/18.jfif",
+            "thumbnailImageSrc": "assets/images/galery/18.jfif",
             "alt": "Description for Image 13",
             "title": "Title 13"
         },
         {
-            "itemImageSrc": "assets/demo/images/galleria/galleria14.jpg",
-            "thumbnailImageSrc": "assets/demo/images/galleria/galleria14s.jpg",
+            "itemImageSrc": "assets/images/galery/19.jfif",
+            "thumbnailImageSrc": "assets/images/galery/19.jfif",
             "alt": "Description for Image 14",
             "title": "Title 14"
         },
         {
-            "itemImageSrc": "assets/demo/images/galleria/galleria15.jpg",
-            "thumbnailImageSrc": "assets/demo/images/galleria/galleria15s.jpg",
+            "itemImageSrc": "assets/images/galery/21.jfif",
+            "thumbnailImageSrc": "assets/images/galery/21.jfif",
             "alt": "Description for Image 15",
             "title": "Title 15"
+        },
+        {
+            "itemImageSrc": "assets/images/galery/20.jfif",
+            "thumbnailImageSrc": "assets/images/galery/20.jfif",
+            "alt": "Description for Image 14",
+            "title": "Title 14"
+        },
+        {
+            "itemImageSrc": "assets/images/galery/22.jfif",
+            "thumbnailImageSrc": "assets/images/galery/22.jfif",
+            "alt": "Description for Image 14",
+            "title": "Title 14"
+        },
+        {
+            "itemImageSrc": "assets/images/galery/23.jfif",
+            "thumbnailImageSrc": "assets/images/galery/23.jfif",
+            "alt": "Description for Image 14",
+            "title": "Title 14"
+        },
+        {
+            "itemImageSrc": "assets/images/galery/25.jpg",
+            "thumbnailImageSrc": "assets/images/galery/25.jpg",
+            "alt": "Description for Image 14",
+            "title": "Title 14"
+        },
+        {
+            "itemImageSrc": "assets/images/galery/26.jpg",
+            "thumbnailImageSrc": "assets/images/galery/26.jpg",
+            "alt": "Description for Image 14",
+            "title": "Title 14"
+        },
+        {
+            "itemImageSrc": "assets/images/galery/27.jpg",
+            "thumbnailImageSrc": "assets/images/galery/27.jpg",
+            "alt": "Description for Image 14",
+            "title": "Title 14"
+        },
+        {
+            "itemImageSrc": "assets/images/galery/28.jpg",
+            "thumbnailImageSrc": "assets/images/galery/28.jpg",
+            "alt": "Description for Image 14",
+            "title": "Title 14"
+        },
+        {
+            "itemImageSrc": "assets/images/galery/29.jpg",
+            "thumbnailImageSrc": "assets/images/galery/29.jpg",
+            "alt": "Description for Image 14",
+            "title": "Title 14"
+        },
+        {
+            "itemImageSrc": "assets/images/galery/31.jpg",
+            "thumbnailImageSrc": "assets/images/galery/31.jpg",
+            "alt": "Description for Image 14",
+            "title": "Title 14"
+        },
+        {
+            "itemImageSrc": "assets/images/galery/31.jfif",
+            "thumbnailImageSrc": "assets/images/galery/31.jfif",
+            "alt": "Description for Image 14",
+            "title": "Title 14"
+        },
+        {
+            "itemImageSrc": "assets/images/galery/32.jfif",
+            "thumbnailImageSrc": "assets/images/galery/32.jfif",
+            "alt": "Description for Image 14",
+            "title": "Title 14"
+        },
+        {
+            "itemImageSrc": "assets/images/galery/33.jfif",
+            "thumbnailImageSrc": "assets/images/galery/33.jfif",
+            "alt": "Description for Image 14",
+            "title": "Title 14"
+        },
+        {
+            "itemImageSrc": "assets/images/galery/34.jfif",
+            "thumbnailImageSrc": "assets/images/galery/34.jfif",
+            "alt": "Description for Image 14",
+            "title": "Title 14"
         }
     ]
 }

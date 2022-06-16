@@ -9,49 +9,40 @@
                 <div class="profile-content">
                     <h6>{{user?.name}}</h6>
                     <span>{{user?.profile}} 👑</span>
-                    <p-button type="button" label="Follow {{user?.name}}"></p-button>
+                    <p-button type="button" label="Go Home" routerLink="/home"></p-button>
                 </div>
             </div>
         </div>
-        <div class="p-col-12 p-md-12 p-xl-2"></div>
-        <div class="p-col-12 p-md-12">
+    </div>
+    <div class="p-grid">
+        <div class="p-col-12 p-md-12 p-xl-1"></div>
+        <div class="p-col-12 p-md-12 p-xl-10">
             <div class="pricing-card classic">
                 <div class="pricing-header">
                     <div class="card p-fluid">
-                        <h5>Media</h5>
+                        <h5>Pablo by {{user?.name}}</h5>
                         <div class="p-grid">
-                            <div class="p-col-6">
-                                <button type="button" pButton label="Image" (click)="op1.toggle($event)"
-                                    class="p-button-success"></button>
-                                <p-overlayPanel #op1>
-                                    <img src="assets/demo/images/nature/nature1.jpg" alt="Nature 1" />
-                                </p-overlayPanel>
-                            </div>
-                            <div class="p-col-6">
-                                <button type="button" pButton label="Message" (click)="op2.toggle($event)"
-                                    class="p-button-primary"></button>
-                                <p-overlayPanel #op2 [showCloseIcon]="true" [style]="{width: '450px'}">
-                                    <div class="p-col-12 p-md-12 p-xl-12">
-                                        {{user?.hate}}
-                                    </div>
-                                </p-overlayPanel>
+                            <div class="p-col-2"></div>
+                            <div class="p-col-8">
+                                {{user?.hate}}
                             </div>
                         </div>
                     </div>
-                    <h5>BEGINNER</h5>
-                    <span>Good starting point for startups</span>
                 </div>
                 <div class="pricing-content">
                     <ul>
-                        <li>Responsive</li>
-                        <li>10 Support Tickets</li>
-                        <li>Free Shipping</li>
-                        <li class="not-included">Unlimited Space</li>
-                        <li class="not-included">Push Messages</li>
+                        <!-- <img src="./../../../assets/images/galery/2.jfif" alt=""> -->
+                        <li>
+                            <p-button type="button" label="SEE PICTURES" routerLink="/utilities/display"
+                                class="p-button-danger">
+                            </p-button>
+                        </li>
+                        <li>
+                            <p-button type="button" label="TRY QUIZZ" routerLink="/pages/crud" class="p-button-info">
+                            </p-button>
+                        </li>
                     </ul>
-                    <p-button type="button" label="TRY QUIZZ" routerLink="/pages/crud" class="p-button-info"></p-button>
                 </div>
-
             </div>
         </div>
     </div>

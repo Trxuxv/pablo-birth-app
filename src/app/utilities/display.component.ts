@@ -8,8 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class DisplayComponent  implements OnInit{
     constructor(private breadcrumbService: AppBreadcrumbService, private photoService: PhotoService ) {
         this.breadcrumbService.setItems([
-            { label: 'Utilities' },
-            { label: 'Display', routerLink: ['/utilities/display'] }
+            { label: 'Media' },
+            { label: 'Photos', routerLink: ['/utilities/display'] }
         ]);
     }
 

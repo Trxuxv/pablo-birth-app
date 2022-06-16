@@ -5,13 +5,16 @@
 			<div class="p-col-12">
 				<div class="card">
 					<p-galleria [value]="images" [responsiveOptions]="galleriaResponsiveOptions"
-								[containerStyle]="{'max-width': '800px', 'margin':'auto'}" [numVisible]="7" [circular]="true">
+						[containerStyle]="{'max-width': '800px', 'margin':'auto'}" [numVisible]="7" [circular]="true">
 						<ng-template pTemplate="item" let-item>
-							<img [src]="item.itemImageSrc" style="width: 100%; display: block;"/>
+							<div style="background-image: url('{{item.itemImageSrc}}'); width: 100vh; height: 65vh; background-size: cover;">
+							</div>
+							<!-- <img [src]="item.itemImageSrc" style="width: 100%; display: block;" /> -->
 						</ng-template>
 						<ng-template pTemplate="thumbnail" let-item>
 							<div class="p-grid p-nogutter p-justify-center">
-								<img [src]="item.thumbnailImageSrc" style="display: block;"/>
+								<img [src]="item.thumbnailImageSrc"
+									style="display: block; width: 40px; height: 40px;" />
 							</div>
 						</ng-template>
 					</p-galleria>

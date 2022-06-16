@@ -185,11 +185,11 @@ export class HomeComponent implements OnInit {
 
     changeTrafficset(event) {
         const traffidDataSet = [
-            [30800, 100],
-            [900, 100],
-            [700, 100],
-            [90, 100],
-            [500, 100],
+            [70800, 100],
+            [70800, 100],
+            [70700, 100],
+            [70700, 100],
+            [70500, 100],
         ];
         this.activeTraffic = parseInt(event.currentTarget.getAttribute('data-index'));
 

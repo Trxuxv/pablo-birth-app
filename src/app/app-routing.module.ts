@@ -45,7 +45,7 @@ import { AppCrudComponent } from './pages/quizz/app.crud.component';
             {
                 path: '', component: AppMainComponent,
                 children: [
-                    { path: '', component: DashboardDemoComponent, canActivate: [AuthGuard] },
+                    { path: '', component: HomeComponent, canActivate: [AuthGuard] },
                     { path: 'home', component: HomeComponent, canActivate: [AuthGuard] },
                     { path: 'pabloByPeople/:id', component: PabloByPeopleComponent, canActivate: [AuthGuard] },
                     { path: 'profile/:id', component: ProfileComponent, canActivate: [AuthGuard] },
