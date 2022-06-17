@@ -73,40 +73,86 @@ export class AppCrudComponent {
             },
             {
                 id: 4,
-                question: 'Select the smallest memory size',
+                question: 'Um dos costumes mais fortes do Pablo',
                 option: [
-                    { optionid: 1, name: 'kilobyte' },
-                    { optionid: 2, name: 'megabyte' },
-                    { optionid: 3, name: 'gigabyte' },
-                    { optionid: 4, name: 'terabyte' }
+                    { optionid: 1, name: 'Lavar a mão a todo momento' },
+                    { optionid: 2, name: 'Tirar o tênis assim que chega na casa' },
+                    { optionid: 3, name: 'Tomar 3 banhos por dia' },
+                    { optionid: 4, name: 'Ler um livro por semana' }
                 ],
                 answer: 1,
                 selected: 0
             },
             {
                 id: 5,
-                question: 'What is the full form of IP?',
+                question: 'Qual dessas coisas o Pablo nunca fez?',
                 option: [
-                    { optionid: 1, name: 'Internet program' },
-                    { optionid: 2, name: 'Internet protocol' },
-                    { optionid: 3, name: 'Interface program' },
-                    { optionid: 4, name: 'Interface protocol' }
+                    { optionid: 1, name: 'Deu aula de Inglês' },
+                    { optionid: 2, name: 'Apresentou em um grupo de dança' },
+                    { optionid: 3, name: 'Já trabalhou como palhaço em festas infantis' },
+                    { optionid: 4, name: 'Deu aula de dança' }
+                ],
+                answer: 3,
+                selected: 0
+            },
+            {
+                id: 6,
+                question: 'O Pablo prefere:',
+                option: [
+                    { optionid: 1, name: 'Chá' },
+                    { optionid: 2, name: 'Café' },
                 ],
                 answer: 2,
                 selected: 0
             },
             {
-                id: 6,
-                question: 'What is the full form of IP?',
+                id: 7,
+                question: 'Campeão do Pablo que ele mais acha lindo:',
                 option: [
-                    { optionid: 1, name: 'Internet program' },
-                    { optionid: 2, name: 'Internet protocol' },
-                    { optionid: 3, name: 'Interface program' },
-                    { optionid: 4, name: 'Interface protocol' }
+                    { optionid: 1, name: 'Kai`sa' },
+                    { optionid: 2, name: 'Graves' },
+                    { optionid: 3, name: 'Vayne' },
+                    { optionid: 4, name: 'Ezreal' }
                 ],
-                answer: 2,
+                answer: 1,
                 selected: 0
             },
+            {
+                id: 8,
+                question: 'Uma das músicas que mais lembra a juventude dele:',
+                option: [
+                    { optionid: 1, name: 'Justin Timberlake - My Love' },
+                    { optionid: 2, name: 'Jessie J - Who`s Laughing Now' },
+                    { optionid: 3, name: 'Iggy Azalea - Fancy' },
+                    { optionid: 4, name: 'MAGIC! - Rude' }
+                ],
+                answer: 3,
+                selected: 0
+            },
+            {
+                id: 9,
+                question: 'Qual é o membro favorito de little mix do Pablo?',
+                option: [
+                    { optionid: 1, name: 'Jesy Nelson' },
+                    { optionid: 2, name: 'Jade Thirlwall' },
+                    { optionid: 3, name: 'Perrie Edwards' },
+                    { optionid: 4, name: 'Leigh-Anne Pinnock' }
+                ],
+                answer: 4,
+                selected: 0
+            },
+            {
+                id: 10,
+                question: 'Qual é o suco de frutas favorito do Pablo?',
+                option: [
+                    { optionid: 1, name: 'Laranja' },
+                    { optionid: 2, name: 'Morango' },
+                    { optionid: 3, name: 'Maracujá' },
+                    { optionid: 4, name: 'Melancia' }
+                ],
+                answer: 3,
+                selected: 0
+            }
         ];
 
         this.currentIndex = 0;
@@ -116,7 +162,7 @@ export class AppCrudComponent {
     next() {
         this.currentIndex = this.currentIndex + 1;
         this.currentQuestionSet = this.questions[this.currentIndex];
-        
+
     }
     submit() {
         this.buttonname = "Replay";
