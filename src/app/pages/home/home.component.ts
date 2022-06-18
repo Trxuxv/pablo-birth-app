@@ -138,7 +138,7 @@ export class HomeComponent implements OnInit {
         };
 
         this.items = [
-            { label: 'See Options', icon: 'pi pi-comment', command: () => this.OnPeopleHate(this.selectedItem) },
+            // { label: 'See Options', icon: 'pi pi-comment', command: () => this.OnPeopleHate(this.selectedItem) },
             { label: 'Profile', icon: 'pi pi-user', command: () => this.OnPeopleProfile(this.selectedItem) },
         ];
 
