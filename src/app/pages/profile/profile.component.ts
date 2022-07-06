@@ -1,7 +1,7 @@
 import { PeopleModel } from './../login/models/people.model';
+import { ActivatedRoute, Params } from '@angular/router';
 import { LoginService } from './../login/login.service';
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Params } from '@angular/router';
 
 @Component({
     templateUrl: './profile.component.html'
